@@ -4,7 +4,7 @@ Creative form for your create post in your CMS admin panel
 1. Make sure to add JQuery , Bootstrap and FontAwesome to the project
 2. Then add the <body> inner tags to your project.
 
-#File input name
+# File input name
 1. the name attribute of the main image(first input) will be *mainImage*
 2. the name attribute of gallery images will be *galleryImage[0]* and it will increase on adding more inputs ( like galleryImage[1] )
 
