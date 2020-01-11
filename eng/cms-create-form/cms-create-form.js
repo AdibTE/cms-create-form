@@ -49,7 +49,7 @@ function addFile() {
     newInput.val("").attr('input-id', parseInt(newInput.attr("input-id")) + 1)
     let inputNum = oldInput.attr("name") == "mainImage" ? 0 : $('.fileDiv').length - 2;
     newInput.attr('name', `galleryImage[${inputNum}]`);
-    $('.fileDiv:last label').text('فایل گالری:');
+    $('.fileDiv:last label').text('Gallery File:');
     $('.fileDiv:last .fa-plus').addClass('hide');
     newInput.on('change', () => {
         $('.fileDiv:last .fa-plus').removeClass('hide');
@@ -151,11 +151,11 @@ function setFileDir(filename) {
 }
 
 function slideRight() {
-    $('.gallery-images').css('left', parseInt($('.gallery-images').css('left')) - 100 + "px")
+    if (parseInt($('.gallery-images').css('left')) < 0) {
+    $('.gallery-images').css('left', parseInt($('.gallery-images').css('left')) + 100 + "px")
+    }
 }
 
 function slideLeft() {
-    if (parseInt($('.gallery-images').css('left')) < 0) {
-        $('.gallery-images').css('left', parseInt($('.gallery-images').css('left')) + 100 + "px")
-    }
+        $('.gallery-images').css('left', parseInt($('.gallery-images').css('left')) - 100 + "px")
 }
