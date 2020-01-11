@@ -1,5 +1,5 @@
 # CMS-Create-Form
-Creative form for your create post in your CMS admin panel
+Creative form for your create post in your CMS admin panel with slideshow gallery
 ![alt text](https://i.imgur.com/yrjtSDK.png "Sample")
 
 1. Make sure to add JQuery , Bootstrap and FontAwesome to the project
