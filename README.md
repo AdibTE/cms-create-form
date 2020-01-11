@@ -1,6 +1,7 @@
 # CMS-Create-Form
 Creative form for your create post in your CMS admin panel
-(https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text][logo]
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 1. Make sure to add JQuery , Bootstrap and FontAwesome to the project
 2. Then add the <body> inner tags to your project.
