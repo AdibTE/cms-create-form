@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="/assets/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/bootstrap.min.css">
+<script src="/assets/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+<link rel="stylesheet" href="/cms-create-form/cms-create-form.css">
+
+<body>
+    <div class="popup-bg hide" onclick="hidePopup()">
+        <div class="popup-body">
+            <div class="popup-close">
+                <i class="fas fa-times" style="cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row " style="margin:40px;padding:40px;border:1px solid grey;border-radius: 25px;position: relative;z-index: 0;">
+
+        <!-- Image Section -->
+
+        <div class="col-md-6" style="position: relative;">
+            <img src="http://placehold.it/1000x2000" alt="" id="picture1">
+            <video src="" class="hide" id="mainVideo" controls>
+                Please change your browser to Chrome or firefox to show the video.
+            </video>
+            <!-- Gallery Section -->
+
+            <div class="gallery col-md-12 hide">
+                <!-- <div class="gallery-btns"> -->
+                <div class="gallery-btn gallery-btn--left gallery-btns">
+                    <i class="fas fa-angle-left fa-lg" onclick="slideLeft()"></i>
+                </div>
+                <div class="gallery-btn gallery-btn--right gallery-btns">
+                    <i class="fas fa-angle-right fa-lg" onclick="slideRight()"></i>
+                </div>
+                <!-- </div> -->
+                <div class="gallery-images">
+                    <img class="gallery-item hide" img-id="1" src="http://placehold.it/1000x600">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Form Section -->
+
+        <div class="col-md-6">
+            <form action="" class="form-horizontal">
+                <div class="form-group row" dir="rtl">
+                    <label dir="rtl" class="control-label col-sm-3">عنوان:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group row" dir="rtl">
+                    <label dir="rtl" class="control-label col-sm-3">عنوانعنوانعنوانعنوان:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group row" dir="rtl">
+                    <label dir="rtl" class="control-label col-sm-3">عنوانعنوانعنوانعنوان:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group row" dir="rtl">
+                    <label dir="rtl" class="control-label col-sm-3">عنوانعنوانعنوانعنوان:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group row fileDiv" dir="rtl">
+                        <label dir="rtl" class="control-label col-sm-3">فایل:</label>
+                        <div class="col-sm-6">
+                            <input type="file" input-id="1" name="mainImage" class="form-control" placeholder="Enter email" onchange="checkFile(this)">
+                        </div>
+                        <div class="col-sm-3 text-center" style="line-height: 35px;">
+                            <i class="fas fa-plus" style="cursor: pointer;" title="افزودن فایل" onclick="addFile()"></i>
+                            <i class="fas fa-times text-danger" style="cursor: pointer;" title="حذف فایل" onclick="removeFile(this)"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="ارسال مطلب" class="btn btn-block btn-info">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/cms-create-form/cms-create-form.js"></script>
+</body>
+
+</html>
